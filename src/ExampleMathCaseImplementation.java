@@ -1,5 +1,6 @@
 
 import org.chicago.cases.AbstractMathCase;
+import org.chicago.cases.AbstractMathCase.MathCase;
 
 import com.optionscity.freeway.api.IDB;
 import com.optionscity.freeway.api.IJobSetup;
@@ -11,9 +12,8 @@ import com.optionscity.freeway.api.IJobSetup;
  * Your team will need to provide your own implementation of this case.
  */
 
-public class ExampleMathCaseImplementation extends AbstractMathCase {
+public class ExampleMathCaseImplementation extends AbstractMathCase implements MathCase {
 	
-	class MySampleMathImplementation implements MathCase {
 		
 		private IDB myDatabase;
 		int factor;
@@ -56,10 +56,9 @@ public class ExampleMathCaseImplementation extends AbstractMathCase {
 
 		}
 
-	}
 
 	public MathCase getMathCaseImplementation() {
-		return new MySampleMathImplementation();
+		return this;
 	}
 
 }
