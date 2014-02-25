@@ -16,8 +16,8 @@ public class ExampleArbCaseImplementation extends AbstractExchangeArbCase implem
 	int factor;
 
 	int position;
-	double[] desiredRobotPrices;
-	double[] desiredSnowPrices;
+	double[] desiredRobotPrices = new double[2];
+	double[] desiredSnowPrices = new double[2];
 
 	public void addVariables(IJobSetup setup) {
 		// Registers a variable with the system.

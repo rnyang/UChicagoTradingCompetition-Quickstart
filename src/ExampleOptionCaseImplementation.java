@@ -8,6 +8,7 @@ import org.chicago.cases.AbstractOptionsCase.OptionsCase;
 import org.chicago.cases.options.OptionSignals.ForecastMessage;
 import org.chicago.cases.options.OptionSignals.RiskMessage;
 import org.chicago.cases.options.OptionSignals.VolUpdate;
+import org.chicago.cases.options.Optionsutil;
 import org.chicago.cases.options.OrderInfo;
 import org.chicago.cases.options.OrderInfo.OrderSide;
 
@@ -78,6 +79,7 @@ public class ExampleOptionCaseImplementation extends AbstractOptionsCase impleme
 
 	public void orderFilled(String idSymbol, double price, int quantity) {
 		log("My order for " + idSymbol + " got filled at " + price + " with quantity of " + quantity);
+		
 	}
 
 
